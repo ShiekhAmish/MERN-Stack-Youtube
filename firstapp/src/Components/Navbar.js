@@ -23,9 +23,9 @@ export default function Navbar(props) {
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
-    <div className={`form-check form-switch mx-3 text-${props.mode=== 'light' ? 'dark':'light'}`}>
+      <div className={`form-check form-switch mx-3 text-${props.mode==='light'?'dark':'light'}`}>
   <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-  <label className="form-check-label" htmlfor="flexSwitchCheckDefault">Enable {props.mode=== 'light' ? 'dark':'light'} Mode</label>
+  <label className="form-check-label" htmlfor="flexSwitchCheckDefault">Enable {props.mode==='light'?'dark':'light'} Mode</label>
 </div>
     </div>
   </div>
@@ -33,7 +33,7 @@ export default function Navbar(props) {
 </nav>
   )
 }
-Navbar.PropTypes= {
+Navbar.propTypes= {
   
   title:PropTypes.string,
 

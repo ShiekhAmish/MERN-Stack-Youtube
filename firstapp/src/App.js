@@ -3,21 +3,21 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import About from './Components/About';
-import React,{useState} from 'react';
+import React,{useState} from 'react'
+
 
 let name= "Amish Sabir";
 function App() {
-  const [mode, setMode] = useState('light');
+  const [mode, setmode] = useState('light');
   const toggleMode =()=>{
-    if (mode === 'light')
+    if (mode=== 'light')
     {
-      setMode ('dark');
+      setmode('dark');
       document.body.style.backgroundColor="black";
     }
-    else{
-      setMode ('light');
+    else {
+      setmode('light');
       document.body.style.backgroundColor="white";
-
     }
   }
   return (
